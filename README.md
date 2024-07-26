@@ -8,7 +8,11 @@ The focus of this assignment is to operate a recommendation service in productio
 
 ## Report for different milestone
 [Mile Stone 1 Report](reports/11695_AI_Engineering_M1.pdf)
+
 [Mile Stone 2 Report](reports/11695_AI_Engineering_M2.pdf)
+
 [Mile Stone 3 Report](reports/11695_AI_Engineering_M3.pdf)
+
 [Mile Stone 4 Report](reports/11695_AI_Engineering_M4.pdf)
+
 [Mile Stone 5 Report](reports/11695_AI_Engineering_M5.pdf)
