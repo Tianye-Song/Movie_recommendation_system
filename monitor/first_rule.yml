@@ -1,0 +1,11 @@
+groups:
+- name: example
+  rules:
+  - alert: HighRequestLatency
+    expr: request_latency_seconds_bucket{le="0.75"}/ ignoring (le) request_latency_seconds_count<0.8
+    for: 60s
+    labels:
+      severity: page
+    annotations:
+      summary: High request latency
+      description: description info

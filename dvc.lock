@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  KNN_1_2022-04-14:
+    cmd: python3 ml/KNN_recommendation.py 1
+    outs:
+    - path: KNN_1_2022-04-14/data.json
+      md5: 558c4cc2d523bc3dfbafa748d51ed586
+      size: 1998053
+    - path: KNN_1_2022-04-14/model.pickle
+      md5: 93554d51b4e45f0e6737cf188b81b4f6
+      size: 388079605
+    - path: KNN_1_2022-04-14/ratings.csv
+      md5: c2c408e46afa43689b6c88e98966eb68
+      size: 1690747
+  KNN_2_2022-04-14:
+    cmd: python3 ml/KNN_recommendation.py 2
+    outs:
+    - path: KNN_2_2022-04-14/data.json
+      md5: 937e1b98ecb7e8c2c7f39c79ddbcdf50
+      size: 1998456
+    - path: KNN_2_2022-04-14/model.pickle
+      md5: 5beae68325f20427de47007013ec2ae3
+      size: 392655910
+    - path: KNN_2_2022-04-14/ratings.csv
+      md5: 4dee040bd50fc85092d2119063e049a3
+      size: 1691144

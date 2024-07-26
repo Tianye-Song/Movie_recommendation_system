@@ -1,0 +1,26 @@
+#version: "19" # optional since v1.27.0
+services:
+  recom_service:
+    build:
+      dockerfile: docker/Dockerfile
+      context: .
+    ports:
+      - "9999"
+    extra_hosts:
+      - "mongoservice:172.17.0.1"
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - recom_service
+    ports:
+      - "4000:4000"
+    restart: always
+
+networks:
+  custom:
+    external: true
+    name: recom_service

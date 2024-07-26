@@ -1,0 +1,16 @@
+kafka/id_rsa
+.DS_Store
+*__pycache__*
+nohup.out
+*.pyc
+*.bson
+*.json
+mongodump*
+.coverage
+*.vscode
+*bashrc
+*bash_history
+.config
+.local
+.pytest_cache
+*.vscode*

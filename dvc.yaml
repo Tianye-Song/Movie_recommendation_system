@@ -1,0 +1,13 @@
+stages:
+  KNN_1_2022-04-14:
+    cmd: python3 ml/KNN_recommendation.py 1
+    outs:
+    - KNN_1_2022-04-14/data.json
+    - KNN_1_2022-04-14/model.pickle
+    - KNN_1_2022-04-14/ratings.csv
+  KNN_2_2022-04-14:
+    cmd: python3 ml/KNN_recommendation.py 2
+    outs:
+    - KNN_2_2022-04-14/data.json
+    - KNN_2_2022-04-14/model.pickle
+    - KNN_2_2022-04-14/ratings.csv
